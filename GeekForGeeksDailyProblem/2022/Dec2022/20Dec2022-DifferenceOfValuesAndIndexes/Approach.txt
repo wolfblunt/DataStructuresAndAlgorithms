@@ -1,0 +1,17 @@
+Simple Easy to understand C++ solution
+
+here i-j will allways be negative as j>=i so
+|i-j| =-(i-j)=j-i.
+
+and then we consider two cases
+
+Case 1
+arr[i]-arr[j] is positive
+curr1 stores the maximum value of -arr[j]+j.
+
+
+Case 2
+arr[i]-arr[j] is negative
+arr[j]-arr[i] is positive
+curr2 stores the maximum value of arr[j]+j.
+And then calsulate the answer accordingly.

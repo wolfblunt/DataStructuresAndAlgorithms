@@ -1,0 +1,17 @@
+The idea here is to think about the problem in the reverse direction. We need to take exactly ‘K’ elements from the array. So we need to select some elements from the starting of the array and some from the ending of the array and the total number of elements chosen from starting and ending of the array must be ‘K’. This line implies that we need to skip ‘N – K’ elements from the array and these ‘N – K’ elements must form a subarray. 
+
+So our problem reduces to finding the subarray of size ‘N – K’ such that the sum of the subarray is minimum
+
+We will maintain a window of size ‘N – K’ to find the required subarray sum. Then we will subtract this from the sum of the array to get the answer.
+
+ 
+
+Algorithm:
+
+1. Calculate the sum of the array and store it in the ‘sum’ variable.
+2. Declare a variable ‘minSum’ that stores the minimum sum of the subarray of size ‘N – K’ and initialize it with ‘sum’. Also declare a variable ‘cur’ to keep track of the sum in the current window of size ‘N – K’.
+3. Run a loop from 0 to ‘N’.
+4. If i >= N – K then subtract ‘arr[ i – N – K]’ from ‘cur’as this element does not lie in our current window of size ‘N – K’.
+5.Add ‘arr[ i ]’ to ‘cur as this element lies inside our current window of size ‘N – K’.’
+6.If i >= N – K then it shows that we have found a window of size ‘N – K’, So, if ‘minSum’ is greater than ‘cur’ then update ‘minSum’ with ‘cur’.
+7.Return ‘sum’ – ‘minSum’ as this is the maximum score we can make.

@@ -1,0 +1,43 @@
+1. Naive solution: Number of subsequences that can be created by N sized array are
+2^N (each element can be considered/not considered 2 choices for N elements)
+Now if we create these 2^N elements and find sum of each of them and then sort
+them to get the kth largest subsequence sum. O(N*2^N)
+
+2. N constraint is 10^5 so we definitely need a better solution.
+Hold on folks, we are going deep :) 
+One **IMPT point is that input can have -ive numbers also.
+
+3. Another **IMPT point is that from k constraints can be max 2000, which means
+that we can store the top k elements in a heap/multiset structure.
+
+4.So the maximum sum that we can have is sum of all +ive values. that is 1 sum.
+we have to find k sum.
+
+5. Another way of seeing this is that once we have max sum = all positive integers
+sum the total sum can only decrease after that. So if we take absolute value of
+elements and find kth smallest sum of that array we can subtract that from total
+to get kth maximum sum of array.
+
+6. Question boils down to finding kth minimum subsequence sum. we sort the absolute 
+array, start by considering 1st element and moving forward we have 2 options: take minimum
+value from priority queue(sum, cur_index), and consider 2 combinations:
+a. take index+1 value along with current sum
+b. remove index value and consider index+1
+now we can pop top of queue and insert value in our min vector. Do this until we reach size of
+min set = k. Now we can find the kth minimal sum from this array.
+
+Also store current index, which we need to consider to remove the current element.
+ex. nums = [2, 4, -2]
+max sum = 6 = k = 1 sum
+sorted(abs(nums)) = [2, 2, 4] 5th smallest subsequence sum
+queue = (2, 0) min_sum_values = [0]
+queue = (2 + 2, 1) (2+2-2, 1) = (4, 1), (2, 1) min_sum_values = [0, 2]
+queue = (2+4, 2) (2+4-2, 2) (2, 1) = (4, 1) (4, 2) (6, 2) min_sum_values = [0, 2, 2]
+queue = (8, 3) (4+4-4, 3) (4, 2) (6, 2) = min_sum_values = [0, 2, 2, 4]
+queue = (4, 2) (4, 3) (6, 2) (8,3)= min_sum_values = [0, 2, 2, 4, 4]
+min_sum_values[k-1] = 4
+ans = 6-4 = 2
+
+yay finally solved.
+time complexity = NlogN(sorting the nums) + KlogK(addition and removal from priority queue)
+space = O(K)

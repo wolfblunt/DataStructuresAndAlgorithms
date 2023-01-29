@@ -1,0 +1,13 @@
+Observation
+
+The easiest way to do this is to check the sum of each subtree and subtract it with total sum of the tree to get sum of both the trees when the current
+subtree is removed.
+
+Solution
+
+Let's use 1 DFS to calculate the total sum of the tree and another one to get the sum of the left subtree and the right subtree under the current node which we can use to calculate the answer for every node.
+
+At any given point in the second dfs we can either remove the left subtree under the current node or the right subtree and make either one of them a new tree.
+We can thus use the observation above to check all the subtrees in this DFS and formulate the final maximum answer.
+
+For clarity I have here 2 seperate DFS functions, these can be merged into one as in Solution 2.

@@ -1,0 +1,12 @@
+Observe that it is sufficient to consider the subarrays of size 2 only. To prove this let’s consider a subarray of size 3 [x y z] which gives the optimal answer, that means the smallest and the second smallest elements are x and z(because if x and y are the smallest and the second smallest elements then [x y] will also give the optimal answer. Similar is the case with y and z). Now y should be greater than both x and z. That means the subarray [y z] will have a greater sum than [x y z] because in the first one we will consider y and z but in the second one, we will consider x and z and y > x.
+
+ 
+
+Algorithm:
+
+ 
+
+- Declare a variable “ans” to store the answer and initialize it to 0.
+- Start iterating from 1 to (‘N’ - 1).
+- Update “ans” as the maximum of itself and the sum of the current and the previous elements.
+- Return the “ans”.

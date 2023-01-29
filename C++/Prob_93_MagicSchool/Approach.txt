@@ -1,0 +1,8 @@
+Solution Approach
+- Think about what condition must hold such that B becomes a correct magic number.
+- Can something be done with the difference of max with every value?
+- Simply take the gcd of difference of all values with the maximum and if B   can divide the gcd then it's a correct answer.
+
+
+Time complexity: O(N * log(max(A)))
+Space complexity: O(N)

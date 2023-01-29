@@ -1,0 +1,1 @@
+Sort the col first the find the max gap between columns and then sort the row then find the max gap between rows. Then return the maxColumn*maxRow.

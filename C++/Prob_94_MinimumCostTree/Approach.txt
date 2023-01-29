@@ -1,0 +1,8 @@
+Solution Approach
+- The Cost(K) function just finds the sum of the weight of all nodes in the   connected component of K.
+- So we can consider every connected component as one node.
+- Also we can observe that our answer will be sum of the weight of all the   nodes multiplied by some coefficient.
+- So we want this coefficient to be lower for higher weights.
+- Therefore choosing the smallest two weighted connected components will give   the optimal answer at every step.
+
+Time Complexity:- O(NlogN) Space Complexity:- O(N)

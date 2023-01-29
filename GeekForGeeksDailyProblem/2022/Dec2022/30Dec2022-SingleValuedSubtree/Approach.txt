@@ -1,0 +1,12 @@
+- Recursively traverse
+
+  i) If either of left subtree or right subtree is not SingleValued, the current_subtree is also not SingleValued.
+
+  ii) If root->left and root->right are null then the subtree is SingleValued.
+
+  iii) If root->left exists and root->left->data != root->data then the subtree is not SingleValued.
+
+  iv) If root->right exists and root->right->data != root->data then the subtree is not singleValued.
+
+   v) Else it is a singleValued subtree, hence increment count.
+- Return count.

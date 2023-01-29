@@ -1,0 +1,9 @@
+For creating incremental sum, all we need to do is traverse a tree, same as to what we did in the array version, but which traversal should we use and on which node should we store the result?
+
+ 
+
+Let's start by answering second question first, what is the one node which will exist in a tree no matter what... That's right it's the root node, A tree can't exist without a root node, so we'll add the data there. Now since we're doing running sum, we know that we need to visit root last, and which traversal visits root node last, it's the post-order traversal.
+
+ 
+
+So what we need to do is, simply create an incremental sum of the tree, while post order traversing it and then get the maximum element from the tree.

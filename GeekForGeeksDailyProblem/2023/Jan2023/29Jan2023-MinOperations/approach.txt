@@ -1,0 +1,19 @@
+Approach : 
+If we see this carefully, we can make a and b equal in maximum 2 moves.
+
+case 1 : We can set
+
+move 1: a = a&b
+move 2 b = a&b
+
+total moves = 2
+
+case 2:
+
+move 1: a=a&b 
+
+if a&b and b are equal then number of moves  =1
+
+case 3: 
+
+if a and b are equal then number of moves = 1

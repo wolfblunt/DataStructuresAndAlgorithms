@@ -1,0 +1,16 @@
+C++ Soln: tc=O(NlogN) Sp.=O(N)
+1)Created a vector of pair to store the pair of arrival and dept. time 
+
+2)then sorted the vector according to the arrival time.
+
+3)then  created a priority queue(pq) to store the dept. time according to to their minimum dept time(implementing min heap DS)
+
+4)We create a count variable (cnt=0 initially) to keep track of the no. of laptops used & Then we traverse the vector and we check for every element:
+
+  i)if pq has size ==0 then we increment the cnt by 1 and push the current element dept. time into the pq.
+
+ ii)if pq.size()!=0 then we enter the else if condition and check if curr element has arrival time greater than equal to the top of the priority queue dept. time then we pop the top element of the pq and insert the curr element into the pq. 
+
+iii) otherwise we enter into the else part as the top of the pq dept. time has greater value than the curr element arrival time & we increment the cnt by 1 and push the curr element dept. time into the pq.
+
+5)return the cnt.

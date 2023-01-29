@@ -1,0 +1,9 @@
+Approach
+Greedy algorithm
+1.An arrow shoots through multiple intervals, all of which are coincident. We try to stack the overlapping intervals together and give a jump.
+2.To facilitate identifying coincidence in a single traversal, we sort in ascending order on the right
+
+Complexity
+Time complexity:O(NlogN)
+
+Space complexity:O(1)

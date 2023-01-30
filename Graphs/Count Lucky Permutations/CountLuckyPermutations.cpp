@@ -16,7 +16,7 @@ class Solution {
             adj[edge[1] - 1][edge[0] - 1] = 1;
         }
         
-         Iterate over each subsetbitmask of nodes
+         // Iterate over each subsetbitmask of nodes
         for (int bitmask = 0; bitmask  (1  N); bitmask++) 
         {
             for (int i = 0; i  N; i++) 
@@ -37,7 +37,7 @@ class Solution {
         }
         
         long long int ans = 0;
-         Count where all the nodes are included in the subset because that is the answer
+         // Count where all the nodes are included in the subset because that is the answer
         for (int i = 0; i  N; i++) 
         {
             ans += dp[i][(1  N) - 1];            

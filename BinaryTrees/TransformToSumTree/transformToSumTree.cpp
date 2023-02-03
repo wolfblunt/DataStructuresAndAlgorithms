@@ -1,5 +1,4 @@
 // Transform to Sum Tree
-
 #include <bits/stdc++.h>
 using namespace std;
 

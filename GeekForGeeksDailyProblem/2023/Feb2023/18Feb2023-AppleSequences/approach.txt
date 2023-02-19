@@ -1,0 +1,19 @@
+Question BreakDown - Finding the maximum length having Apples wherein Orange can be converted to Apple atmost m times.
+
+Intuition - Let's say I am taking Apples and in between Oranges come , so If I can convert Orange to Apple , this can be added in maximising apple Sequence.
+
+Like
+
+AAAOAAOA , m=1
+
+first 3 can be taken and since m=1 so one O can also be taken , next two AA can also be taken
+
+AAAOAAOA
+
+But next O can't be taken since m=1 is allowed and I have already converted O to A once.
+
+So, next time
+
+AAAOAAOA can be taken only.
+
+So,basically anytime while maximising sequence, extra O comes , so slide string from ahead until this extra O is not removed. 

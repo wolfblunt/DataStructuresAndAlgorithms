@@ -1,0 +1,8 @@
+C++ Priority Queue Efficient Explained Solution:
+
+1. First we will store all the projects in projects vector as pairs {Profit(i), Capital(i)};
+2. Now we will sort all the projects according to its capital value.
+3. Now we will fetch all the projects that we can perform for our own capital value.
+4. After fetching all these projects sotre their profit value in Max Heap (maxProfit in below code).
+5. Now check if the Heap is Empty or not, if its not empty then take the top value of the heap (indicates that we chose max profit value from given projects, think greedy here).
+6. Now perform step 3, k times because we want to perform exactly k projects to gain max profit.

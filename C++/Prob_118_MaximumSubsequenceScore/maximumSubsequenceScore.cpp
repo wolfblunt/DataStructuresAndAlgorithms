@@ -11,9 +11,9 @@ public:
             v.push_back({nums2[i], nums1[i]});
         }
 
-        sort(v.begin(), v.end(), greater<pair<int,int>>());
+        sort(v.begin(), v.end(), greater<pair<int,int>>());  // Sorting in Descending Order
 
-        priority_queue<int, vector<int>, greater<int>> pq;
+        priority_queue<int, vector<int>, greater<int>> pq;   // Min Heap
         long long result=0;
         long long sum = 0;
         for(int i=0;i<k-1;i++)

@@ -3,7 +3,7 @@
 bool cycleDetect(int A, vector<vector<int> > &B, vector<bool>& visited, int source)
 {
     visited[source] = true;
-    queue<pair<int,int>> q;
+    queue<pair<int,int>> q;  // {node, parent}
     q.push({source,-1});
     
     while(!q.empty())

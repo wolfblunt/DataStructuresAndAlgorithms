@@ -8,7 +8,7 @@ class Solution
     public:
     //Function to find minimum time required to rot all oranges. 
     int orangesRotting(vector<vector<int>>& grid) {
-         queue<pair<pair<int, int>, int>> q;
+        queue<pair<pair<int, int>, int>> q; // {{x,y}, time}
         vector<vector<bool>> visited(grid.size(), vector<bool>(grid[0].size(), false));
 
         for(int i=0;i<grid.size();i++)

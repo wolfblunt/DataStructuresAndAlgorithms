@@ -13,7 +13,7 @@ class Solution
 	    int m = grid[0].size();
 	    vector<vector<int>> visited(n, vector<int>(m,0));
 	    vector<vector<int>> distance(n, vector<int>(m,0));
-	    queue<pair<pair<int,int>,int>> q;
+	    queue<pair<pair<int,int>,int>> q;   // {{x_cord, y_cord}, distance}
 	    vector<vector<int>> dirs = {{1,0},{-1,0},{0,1},{0,-1}};
 	    for(int i=0;i<n;i++)
 	    {

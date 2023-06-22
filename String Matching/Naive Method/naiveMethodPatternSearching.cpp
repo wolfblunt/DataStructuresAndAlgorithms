@@ -19,8 +19,7 @@ void search(char* pat, char* txt)
             if (txt[i + j] != pat[j])
                 break;
  
-        if (j
-            == M) // if pat[0...M-1] = txt[i, i+1, ...i+M-1]
+        if (j== M) // if pat[0...M-1] = txt[i, i+1, ...i+M-1]
             cout << "Pattern found at index " << i << endl;
     }
 }

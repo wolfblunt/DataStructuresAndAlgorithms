@@ -8,7 +8,6 @@ class Solution{
     public:
     vector<int>kthSmallestNum(int n, vector<vector<int>>&range, int q, vector<int>queries){
         vector<pair<int,int>> fv;
-        // vector<int> v;
         sort(range.begin(), range.end());
         int prev = range[0][0];
         int next = range[0][1];
@@ -28,11 +27,6 @@ class Solution{
                 fv.push_back({prev, next});
             }
         }
-        
-        // for(int j=0;j<fv.size();j++)
-        // {
-        //     cout<<fv[j].first<<" "<<fv[j].second<<endl;
-        // }
         
         vector<int> result;
         for(int i=0;i<q;i++)

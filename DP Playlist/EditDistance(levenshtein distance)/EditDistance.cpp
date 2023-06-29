@@ -13,7 +13,7 @@ int editDistanceUtil(string& S1, string& S2, int i, int j, vector<vector<int>>& 
     if(S1[i]==S2[j])
         return dp[i][j] =  0+editDistanceUtil(S1,S2,i-1,j-1,dp);
         
-    // Minimum of three choices
+    // Minimum of three choices : min(replace, delete, insert)
     else return dp[i][j] = 1+min(editDistanceUtil(S1,S2,i-1,j-1,dp),
     min(editDistanceUtil(S1,S2,i-1,j,dp),editDistanceUtil(S1,S2,i,j-1,dp)));
     

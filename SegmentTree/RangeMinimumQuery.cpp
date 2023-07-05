@@ -55,8 +55,7 @@ void buildSegmentTree(int index, int low, int high, int* segmentTree, int arr[])
 }
 
 
-/* The functions which 
-builds the segment tree */
+/* The functions which builds the segment tree */
 int *constructST(int arr[],int n)
 {
     int *segmentTree = new int[4*n+1];
@@ -81,9 +80,7 @@ int RMQFind(int index, int low, int high, int a, int b, int st[])
     return min(p,q);
 }
 
-/* The functions returns the
- min element in the range
- from a and b */
+/* The functions returns the min element in the range from a and b */
 int RMQ(int st[] , int n, int a, int b)
 {
     return RMQFind(0,0, n-1,a,b,st);

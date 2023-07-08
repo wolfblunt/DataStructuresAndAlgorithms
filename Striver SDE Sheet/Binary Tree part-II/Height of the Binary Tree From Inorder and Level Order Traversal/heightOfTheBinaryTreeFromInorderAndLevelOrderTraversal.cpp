@@ -19,7 +19,7 @@ int heightOfTheTree(vector<int>& inorder, vector<int>& levelOrder, int N){
 	int maxHeight = 0;
 	queue<Temp> q;
 
-	Temp temp(0,0,N-1);  // ('HEIGHT', ‘LEFTINDEX’, ‘RIGHTINDEX’)
+	Temp temp(0,0,N-1);  // ('HEIGHT', 'LEFTINDEX', 'RIGHTINDEX')
 	q.push(temp);
 
 	unordered_map<int,int> um; // {inorderElement, indexInInorderArray}

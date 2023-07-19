@@ -2,6 +2,7 @@
 
 class Solution {
 public:
+    // lis(index, prevIndex) -> ex: lis(3,0) ==> lenth of lis starting from 3rd Index, whose prevIndex is 0.
     int lis(vector<int>& nums, int index, int prevIndex, vector<vector<int>> dp)
     {
         if(index == nums.size())

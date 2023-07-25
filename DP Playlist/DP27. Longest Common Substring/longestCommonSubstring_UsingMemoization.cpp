@@ -30,7 +30,7 @@ class Solution{
     }
     
     
-    int longestCommonSubstr (string S1, string S2, int n, int m)
+    int longestCommonSubstr(string S1, string S2, int n, int m)
     {
         vector<vector<int>> dp(n, vector<int>(m,-1));
         

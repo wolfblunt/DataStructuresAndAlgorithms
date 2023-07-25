@@ -21,13 +21,15 @@ public:
         {
             value += grid[i2][j2];
         }
+        // 4 possibilities
+        // {r1=i1,r2=i2,c1=j1+1,c2=j2+1} , {r1=i1,r2=i2+1,c1=j1+1,c2=j2}, {r1=i1+1,r2=i2,c1=j1,c2=j2+1}, {r1=i1+1,r2=i2+1,c1=j1,c2=j2}
         value += max(cherryFunc(grid, i, j1+1, j2+1, r, dp), max(cherryFunc(grid, i, j1+1, j2, r, dp), max(cherryFunc(grid, i+1, j1, j2+1, r, dp), cherryFunc(grid, i+1, j1, j2, r, dp))));
         return dp[i][j1][j2] = value;
     }
 
     int cherryPickup(vector<vector<int>>& grid) {
         int n = grid.size();
-        vector<vector<vector<int>>> dp(n,vector<vector<int>>(n,vector<int>(n,-1)));
+        vector<vector<vector<int>>> dp(n,vector<vector<int>>(n,vector<int>(n,-1)));  // dp[r][c1][c2]
         return max(0, cherryFunc(grid, 0, 0, 0, n-1, dp));
     }
 };

@@ -18,7 +18,7 @@ int helper(vector<int> &heights, vector<int> &dp, int index)
     int twoSteps = INT_MAX;
     if(index-2 >=0)
     {
-        twoSteps = abs(heights[index] - heights[index-2]) + helper(dp, dp, index-2);
+        twoSteps = abs(heights[index] - heights[index-2]) + helper(heights, dp, index-2);
     }
 
     return dp[index] = min(oneStep, twoSteps);

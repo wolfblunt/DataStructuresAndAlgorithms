@@ -4,7 +4,6 @@ class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<int>> dp(n+1, vector<int>(2,0));  // 1 for buy and 2 for sell
         vector<int> ahead(2,0), curr(2,0);
         ahead[1] = 0;
         ahead[0] = 0;

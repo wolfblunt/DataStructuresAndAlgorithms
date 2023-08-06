@@ -26,7 +26,7 @@ long long helper(string & expression, int i, int j, int isTrue, vector<vector<ve
     }
 
     long long ways = 0;
-    for(int index=i+1;index<=j-1;index++)
+    for(int index=i+1;index<=j-1;index+=2)
     {
         long long leftTrue = helper(expression, i, index-1, 1, dp);
         long long leftFalse = helper(expression, i, index-1, 0, dp);

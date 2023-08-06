@@ -39,7 +39,7 @@ class Solution
     //order to find the critical floor.
     int eggDrop(int n, int k) 
     {
-        vector<vector<int>> dp(201, vector<int>(201, -1)); // {n,k} -> {noOfEggs, moOfFloor}
+        vector<vector<int>> dp(201, vector<int>(201, -1)); // {n,k} -> {noOfEggs, noOfFloor}
         return helper(n, k, dp);
     }
 };

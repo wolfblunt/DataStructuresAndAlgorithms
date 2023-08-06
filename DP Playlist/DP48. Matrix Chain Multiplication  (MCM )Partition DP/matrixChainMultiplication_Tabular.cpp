@@ -10,7 +10,7 @@ int matrixChainMultiplication(int* arr, int n) {
             int mini = INT_MAX;
             for(int k=i;k<j;k++)
             {
-                int cost = arr[i-1]*arr[k]*arr[j] + helper(arr, i, k, dp) + helper(arr, k+1,j,dp);
+                int cost = arr[i-1]*arr[k]*arr[j] + dp[i][k] + dp[k+1][j];
                 mini = min(mini, cost);
             }
             dp[i][j] = mini;

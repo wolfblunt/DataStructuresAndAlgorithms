@@ -13,12 +13,17 @@ public:
             return dp[i][j];
         }
 
+        // in case, current character is not repeated in the rest of the string
         int answer = 1 + helper(s, i+1, j, dp);
+
         char firstChar = s[i];
         for(int k=i+1;k<=j;k++)
         {
+            // if repeated then update the answer
             if(firstChar == s[k])
             {
+                // splitting from i -> k - 1(remove the last character)
+                // and from k + 1 -> j
                 int betteranswer = helper(s, i, k-1, dp) + helper(s, k+1, j, dp);
                 answer = min(answer, betteranswer);
             }

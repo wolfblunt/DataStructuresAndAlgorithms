@@ -20,7 +20,7 @@ public:
             }
             else
             {
-                // just nums[i] se bade element the index find karo in ans array using binarysearch
+                // just nums[i] se bade element ka index find karo in ans array using binarysearch
                 int index = lower_bound(ans.begin(), ans.end(), nums[i]) - ans.begin();
                 ans[index] = nums[i];
             }

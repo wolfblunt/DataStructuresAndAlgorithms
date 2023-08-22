@@ -25,7 +25,7 @@ public:
         ListNode* pointer;
         pointer = head;
 
-        while (pointer->next != NULL)  // removing ftom middle of the linked list
+        while (pointer->next != NULL)  // removing from middle of the linked list
         {
             if(pointer->next->val == val)
             {

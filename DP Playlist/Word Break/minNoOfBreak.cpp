@@ -5,7 +5,7 @@
 int dp[51];
 int f(int L,int N,string &s,unordered_map<string,int> &hashmap)
 {
-    if(L == N || hashmap.find(s.substr(L,N-L)) != hashmap.end()) // if whole word found in dict
+    if(L == N || hashmap.find(s.substr(L,N-L)) != hashmap.end()) // if whole remaining word found in dict
     {
         return 0;
     }

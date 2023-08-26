@@ -35,7 +35,7 @@ public:
     double soupServings(int n) {
         if(n>=5000)
         {
-            return 1.0;
+            return 1.0;  // after n>=5000 the probability is almost equal to 1.
         }
         vector<vector<double>> dp(n+1, vector<double>(n+1, -1));
         return helper(n, n, dp);

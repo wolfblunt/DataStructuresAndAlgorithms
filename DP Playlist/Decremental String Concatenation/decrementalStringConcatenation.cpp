@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int dp[1001][50][50];
+    int dp[1001][50][50];   // dp[noOfWords][firstChar][lastChar]
     
     int helper(vector<string>& words, int index, char firstChar, char lastChar)
     {

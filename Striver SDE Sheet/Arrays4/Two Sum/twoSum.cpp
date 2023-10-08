@@ -10,7 +10,7 @@ public:
         {
             if(um.find(target-nums[i]) == um.end())
             {
-                um[nums[i]] = i;;
+                um[nums[i]] = i;
             }
             else
             {

@@ -11,7 +11,7 @@ public:
             sign=1;
             n = -1*n;
         }
-        while(n>0)
+        while(n)
         {
             if(n%2)
             {

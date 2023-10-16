@@ -11,7 +11,7 @@ public:
         {
             return -1;
         }
-        queue<pair<int, pair<int, int>>> q;
+        queue<pair<int, pair<int, int>>> q; // queue<distance, <row, col>>
         q.push({1,{0,0}});
         vector<vector<int>> dis(n, vector<int>(m, 1e9));
         vector<vector<int>> t = {{1,0},{-1,0},{0,-1},{0,1},{1,1},{-1,1},{1,-1},{-1,-1}};

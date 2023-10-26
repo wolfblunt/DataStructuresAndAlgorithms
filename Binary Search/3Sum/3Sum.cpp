@@ -1,11 +1,11 @@
 // 3 Sum - https://leetcode.com/problems/3sum/description/
 // O(n^2)
 
-vector<vector<int> > threeSum(vector<int> &num) {
+vector<vector<int>> threeSum(vector<int> &num) {
     
-    vector<vector<int> > res;
+    vector<vector<int>> res;
 
-    std::sort(num.begin(), num.end());
+    sort(num.begin(), num.end());
 
     for (int i = 0; i < num.size(); i++) {
         

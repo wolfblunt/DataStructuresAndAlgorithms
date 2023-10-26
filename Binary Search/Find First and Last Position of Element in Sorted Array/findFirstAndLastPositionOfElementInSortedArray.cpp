@@ -7,7 +7,7 @@ public:
         int low = 0;
         int high = nums.size() - 1;
 
-        //first occurrence
+        // first occurrence
         while(low<=high)
         {
             int mid = low + ((high - low) / 2);

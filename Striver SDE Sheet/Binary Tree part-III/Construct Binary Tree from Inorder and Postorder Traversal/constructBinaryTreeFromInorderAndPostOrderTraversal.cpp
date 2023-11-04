@@ -48,7 +48,7 @@ public:
             mp[inorder[i]] = i;
         }
 		// Create tree starting from root at position (n-1) in postorder array
-		// Range for current inirder array : [0, n-1]
+		// Range for current inorder array : [0, n-1]
         return make_tree(0, inorder.size()-1, idx, postorder, inorder);
     }
 };

@@ -4,7 +4,7 @@ class Solution {
 public:
     int findNumberOfLIS(vector<int>& nums) {
         int n = nums.size();
-        vector<int> dp(n,1), cut(n,1);
+        vector<int> dp(n,1), cut(n,1); // count
         int maxi = 1;
         for(int i=0;i<n;i++)
         {

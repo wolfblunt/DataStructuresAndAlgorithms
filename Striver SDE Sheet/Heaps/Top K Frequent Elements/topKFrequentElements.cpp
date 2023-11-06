@@ -3,13 +3,13 @@
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        unordered_map<int, int> um; // max heap
+        unordered_map<int, int> um; 
         for(auto a: nums)
         {
             um[a]++;
         }
 
-        priority_queue<pair<int,int>> pq;
+        priority_queue<pair<int,int>> pq; // max heap
 
         for(auto a: um)
         {

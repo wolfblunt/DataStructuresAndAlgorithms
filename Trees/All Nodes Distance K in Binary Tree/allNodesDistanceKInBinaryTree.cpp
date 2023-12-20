@@ -60,7 +60,7 @@ public:
         }
 
         unordered_map<int, int> visited;  // nodeValue -> 1/0  => 1: Visited and 0: NotVisited
-        getRef(root,target);;
+        getRef(root,target);
         q.push(targetNode);
         while(k-- && !q.empty())
         {

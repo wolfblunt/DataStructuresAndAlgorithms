@@ -8,28 +8,31 @@ public:
         int duprow = row;
         int dupcol = col;
 
-        while (row >= 0 && col >= 0) {
-        if (board[row][col] == 'Q')
-            return false;
-        row--;
-        col--;
+        while (row >= 0 && col >= 0) 
+        {
+            if (board[row][col] == 'Q')
+                return false;
+            row--;
+            col--;
         }
 
         col = dupcol;
         row = duprow;
-        while (col >= 0) {
-        if (board[row][col] == 'Q')
-            return false;
-        col--;
+        while (col >= 0) 
+        {
+            if (board[row][col] == 'Q')
+                return false;
+            col--;
         }
 
         row = duprow;
         col = dupcol;
-        while (row < n && col >= 0) {
-        if (board[row][col] == 'Q')
-            return false;
-        row++;
-        col--;
+        while (row < n && col >= 0) 
+        {
+            if (board[row][col] == 'Q')
+                return false;
+            row++;
+            col--;
         }
         return true;
     }

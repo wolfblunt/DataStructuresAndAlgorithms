@@ -18,7 +18,7 @@ bool helperFunc(int index, int k, vector<int> &arr,  vector<vector<int>> &dp)
     bool pick = false;
     if(arr[index]<=k)
     {
-        pick = helperFunc(index-1, k-arr[index], arr,dp);
+        pick = helperFunc(index-1, k-arr[index], arr, dp);
     }
     return dp[index][k] = pick | notPick;
 }

@@ -8,6 +8,9 @@ using namespace std;
 
 int main()
 {
+	ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 	vector<int> v = {1,2,3,4,5,6};
 	vector<int> w = {7,3,4,5,6};
 	int v_s = v.size();

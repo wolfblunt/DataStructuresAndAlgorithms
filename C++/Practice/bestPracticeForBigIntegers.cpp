@@ -4,6 +4,9 @@ using namespace std;
 // Main driver method with int32_t return type
 int32_t main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
     // using sizeof() method
     cout << "size of int = " << sizeof(int) << '\n';
  

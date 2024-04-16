@@ -13,7 +13,7 @@ void shortestPath(vector<pair<int, int>> graph[], int V, int source)
 {
 	vector<int> dest(V, INF);
 	dest[source] = 0;
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;  // <distance, node>
 	pq.push(make_pair(0, source));
 
 	while(!pq.empty())

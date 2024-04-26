@@ -1,0 +1,9 @@
+Why do we need multiple levels of cache memory?
+
+This is to do with the physical size on the die. Each bit in a cache is held by one or more transistors, so if you want a lot of cache you need a lot of transistors. The speed of the cache is essentially inversely proportional to locality to the unit that wants to access it - in tiny devices such as this, communication gets slower when your signal path gets longer. This is partially to do with substrate impedance, but at this level there are some more complex physics phenomena involved.
+
+If we want to include a large singular cache, it has to be within a very short distance of the MMU, ALU, etc. at the same time. This makes the physical design of the processor quite difficult, as a large cache takes up a lot of space. In order to make the cache "local" to these subunits, you have to sacrifice the locality of the subunits to one-another.
+
+By using a small, fast local cache (L1) we can maximise locality and speed, but we lose size. So we then use a secondary cache (L2) to keep larger amounts of data, with a slight locality (and therefore speed) sacrifice. This gives us the best of both worlds - we can store a lot of data, but still have a very fast local cache for processor subunits to use.
+
+In multicore processors, the L3 cache is usually shared between cores. In this type of design, the L1 and L2 caches are built into the die of each core, and the L3 cache sits between the cores. This gives reasonable locality to each core, but also allows for a very large cache.

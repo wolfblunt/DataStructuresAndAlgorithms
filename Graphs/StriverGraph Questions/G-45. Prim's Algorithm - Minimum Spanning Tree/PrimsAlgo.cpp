@@ -9,7 +9,7 @@ class Solution
 	//Function to find sum of weights of edges of the Minimum Spanning Tree.
     int spanningTree(int V, vector<vector<int>> adj[])
     {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;  // {weight, node}
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;  // {weight, node} -> MinHeap
         vector<int> visited(V, 0);
         pq.push({0, 0}); // {weight, node}
         

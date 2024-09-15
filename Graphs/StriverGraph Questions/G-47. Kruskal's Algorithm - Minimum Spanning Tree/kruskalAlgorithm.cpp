@@ -37,7 +37,7 @@ class Solution
 	    else
 	    {
 	        parent[pv] = pu;
-	        rank[u]++;
+	        rank[pu]++;
 	    }
 	}
 	

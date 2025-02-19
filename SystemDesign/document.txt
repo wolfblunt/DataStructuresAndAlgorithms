@@ -1,3 +1,7 @@
 https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca
 
 https://github.com/lavakumarThatisetti/Machine-Coding-Round/tree/master/src/com/lavakumar
+
+https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster
+
+https://systemdesign.one/system-design-interview-cheatsheet/#system-design-template

@@ -16,7 +16,7 @@ public:
         {
             return dp[i][j1][j2];
         }
-        int value = grid[i][j1];;
+        int value = grid[i][j1];
         if(j1!=j2)
         {
             value += grid[i2][j2];

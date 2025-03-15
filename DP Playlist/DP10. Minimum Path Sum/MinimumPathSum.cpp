@@ -18,8 +18,8 @@ int sumCalculate(int i, int j, vector<vector<int>> &grid, vector<vector<int>> &d
     }
     
     int up = grid[i][j] + sumCalculate(i-1,j,grid,dp);
-    int down = grid[i][j] + sumCalculate(i,j-1,grid,dp);
-    return dp[i][j] = min(up,down);
+    int left = grid[i][j] + sumCalculate(i,j-1,grid,dp);
+    return dp[i][j] = min(up,left);
 }
 
 int minSumPath(vector<vector<int>> &grid) {

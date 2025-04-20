@@ -26,12 +26,12 @@ public:
     int minSpeedOnTime(vector<int>& dist, double hour) {
         int low = 1;
         int high = (int)(1e7+5);
-        while(low<high)
+        while(low<=high)
         {
             int mid = low + (high-low) / 2;
             if(isPossible(dist, hour, mid))
             {
-                high = mid;
+                high = mid-1;
             }
             else
             {

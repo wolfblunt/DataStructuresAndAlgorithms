@@ -14,7 +14,7 @@ long long merge(int arr[], int l, int mid, int r)
 	}
 	for(int i=0;i<n2;i++)
 	{
-		b[i] = arr[mid+i+1];
+		b[i] = arr[mid+1+i];
 	}
 	int i=0;int j=0;int k=l;
 	while(i<n1 and j<n2)
@@ -25,7 +25,6 @@ long long merge(int arr[], int l, int mid, int r)
 			i++;
 			k++;
 		}
-
 		else
 		{
 			arr[k] = b[j];

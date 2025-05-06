@@ -106,8 +106,8 @@ class Solution
     //from left to right in Binary Tree.
     vector<int> topView(Node *root)
     {
-        map<int, int> mp;
-        queue<pair<int, Node*>> q;
+        map<int, int> mp;  // {dist, node->data}
+        queue<pair<int, Node*>> q;  // {dist, node}
         q.push({0, root});
         while(!q.empty())
         {

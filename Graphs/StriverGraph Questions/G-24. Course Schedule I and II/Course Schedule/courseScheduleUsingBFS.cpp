@@ -1,4 +1,4 @@
-// Course Schedule
+// Course Schedule: O(V + E)
 
 class Solution {
 public:
@@ -8,8 +8,8 @@ public:
 
         for(auto a: prerequisites)
         {
-            adj[a[0]].push_back(a[1]);
-            indegree[a[1]]++;
+            adj[a[1]].push_back(a[0]);
+            indegree[a[0]]++;
         }
 
         queue<int> q;

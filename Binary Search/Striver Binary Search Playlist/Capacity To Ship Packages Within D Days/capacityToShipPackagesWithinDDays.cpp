@@ -2,30 +2,30 @@
 
 class Solution {
 public:
-    bool isPossible(vector<int>& A, int barrier, int partition)
+    bool isPossible(vector<int>& A, int barrier, int days)
     {
         int n = A.size();
-        int allotedStudent = 0;
-        int pages = 0;
+        int totalDays = 0;
+        int dayCapacity = 0;
         
         for(int i=0;i<n;i++)
         {
-            if(pages + A[i] > barrier)
+            if(dayCapacity + A[i] > barrier)
             {
-                allotedStudent += 1;
-                pages = A[i];
-                if (pages > barrier) 
+                totalDays += 1;
+                dayCapacity = A[i];
+                if (dayCapacity > barrier) 
                 {
                     return false;
                 }
             }
             else
             {
-                pages += A[i];
+                dayCapacity += A[i];
             }
         }
         
-        if(allotedStudent < partition)
+        if(totalDays < days)
         {
             return true;
         }

@@ -83,6 +83,22 @@ public:
     }
 };
 
+int main() {
+    Trie trie;
+
+    // Insert words into the Trie
+    trie.insert("apple");
+    trie.insert("app");
+    trie.insert("bat");
+
+    // Search for words
+    cout << "Search for 'apple': " << (trie.search("apple") ? "Found" : "Not Found") << endl;
+    
+    // Check prefixes
+    cout << "Starts with 'ap': " << (trie.startsWith("ap") ? "Yes" : "No") << endl;
+    return 0;
+}
+
 /**
  * Your Trie object will be instantiated and called as such:
  * Trie* obj = new Trie();

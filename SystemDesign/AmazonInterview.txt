@@ -1,0 +1,103 @@
+HLD
+
+Design a chat system (3 times)
+Design a collaborative code editor like Google Docs
+Design a ride-sharing app like Uber (2 times)
+Question related to metrics and distributed tracing (vague)
+High-Level Design of BookMyShow (focus on booking, high traffic handling)
+Design Google Docs with scalable link sharing (hot hits handling)
+Design a URL shortener
+Design Google Drive
+Design Twitter with some custom requirements
+High-Level Design of a Payment Service (focus on scalability, fault tolerance, trade-offs)
+Design a chat app with video messaging and video replies
+Design TikTok
+Design autocomplete / search recommendations in Amazon Search (given a ranking algorithm)
+Design a vehicle service center management system
+Design a news feed like Reddit (with age restriction capability)
+Design an upload service like Google Drive (files + photos)
+Design a system to extract images from video frames and show purchase links for products on Amazon Prime
+Design a system to track and reward Twitch viewers by watch time (top 10 viewers in the past week)
+Design a delivery workflow system where the delivery person scans products, updates states, triggers emails, and uses OTP/pictures for delivery confirmation
+Design a vehicle tracking system for multiple client use cases (cab booking, food delivery)
+Design a metrics monitoring and alerting system
+Update Mars Rover [https://leetcode.com/discuss/post/5804312/amazon-hld-update-mars-rover-by-nsd14022-svdz/]
+Design a tag management system
+Desing URL shorterner (This was asked to me)
+LLD
+
+Design the LLD of a Vending Machine
+LLD – Design a Quick Commerce System
+Design a Parking Lot
+Design Amazon Locker
+LLD of Splitwise
+Design a Hotel Reservation System
+Design Customer Reviews for products in Amazon
+Rate Limiter LLD
+Design a Movie Booking System
+Design an IRCTC Booking System (Railway Reservation) – focus on booking module and conditions
+Design a Rate Limiter (2 times) – explained Token Bucket Algorithm, follow-up: 10 threads & 1000 API calls
+LLD for a Seller Experience Application
+Design a File Storing System somewhat similar to https://leetcode.com/discuss/post/1071562/design-a-file-download-application-syste-7kg2/
+Design a Chat Messenger like WhatsApp or Facebook Messenger
+Design a Delivery Partner Assignment System
+Design a Chess Game
+Design a File Download System
+Design an LRU Cache
+Design an Elevator (This was asked to my fellow candidate in F2F interview)
+DSA
+
+So few interview experiences provide direct leetcode problems link. So what I did is, I created a list in leetcode and added them to it, which will be very easy for us to practice. I suggest you to do the same thing. If it is not a leetcode problem or a open question statement track it somewhere, I do it in google docs.
+This is my list which has 27 problems https://leetcode.com/problem-list/23kp61xm/ and below are open questions which I found
+
+Koko Eating Bananas
+
+Monotonic Stack problems
+
+Word Break (asked twice)
+
+Amount of Time for Binary Tree to be Infected – N-ary Tree variation
+
+Longest Common Subsequence
+
+Longest Palindromic Substring
+
+Zigzag Level Order Traversal of Binary Tree
+
+Max Path Sum in Binary Tree (with negative values)
+
+Follow-up: Print the path as well
+Kth Smallest Element in BST
+
+Missing Ranges (Leetcode)
+
+Matrix Clockwise Rotation – Bar Raiser style
+
+Path Sum I: Given a binary tree and target value, check if there's a path from root to leaf whose node sum equals target
+
+Path Sum III variation: From any node to leaf, path only moves up (doesn't cross root) – tricky constraint
+
+Shortest Path in Grid (4 directions only, no diagonals) – variation of “Shortest Path to Find Food”
+
+Amazon Locker Problem:
+
+Function to return locker to open when package is received
+Function to retrieve package for a customer
+Maximum Subset Sum in Binary Tree such that no two nodes are adjacent
+
+Follow-up: Print the subset
+Minimum Number of Platforms – classic interval scheduling logic
+
+Top View of Binary Tree
+
+Dynamic Number of Islands – with each query (DSU/DFS)
+
+Next Permutation
+
+Decode Encoded String – e.g. a3[b2[c]] → abccbccbcc
+
+Longest Valid Parentheses
+
+Dungeon Game type problem
+
+Lottery System – Closest match: Random Pick With Weight on LeetCode

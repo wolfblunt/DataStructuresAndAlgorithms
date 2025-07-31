@@ -1,4 +1,4 @@
-// Unique Paths in grid
+// Unique Paths in grid - O(n*m)
 
 #include <bits/stdc++.h>
 

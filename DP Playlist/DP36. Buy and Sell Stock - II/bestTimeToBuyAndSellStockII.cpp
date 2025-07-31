@@ -27,7 +27,7 @@ public:
 
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<int>> dp(n+1, vector<int>(2,-1));  // 1 for buy and 2 for sell
-        return helper(prices, 0, 1, dp); // initial state will be buy i.e. - 1
+        vector<vector<int>> dp(n+1, vector<int>(2,-1));  // 1 for buy and 0 for sell
+        return helper(prices, 0, 1, dp); // initial state will be buy i.e. 1
     }
 };

@@ -28,7 +28,7 @@ class Solution{
     }
     
     int cutRod(int price[], int n) {
-        vector<vector<int>> dp(n, vector<int>(n+1,-1));
+        vector<vector<int>> dp(n, vector<int>(n+1,-1));  // dp[index][rodLength]
         return helper(price, n-1, n, dp);
     }
 };

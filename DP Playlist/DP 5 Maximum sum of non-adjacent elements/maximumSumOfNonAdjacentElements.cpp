@@ -1,4 +1,4 @@
-// Maximum sum of non-adjacent elements
+// Maximum sum of non-adjacent elements - O(n)
 
 #include <bits/stdc++.h> 
 int helper(vector<int>& arr, int index, vector<int>& dp)

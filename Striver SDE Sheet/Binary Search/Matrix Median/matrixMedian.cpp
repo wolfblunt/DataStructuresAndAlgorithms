@@ -1,4 +1,4 @@
-// Matrix Median
+// Matrix Median: O(log(range) * n * log m), where range is the value range (here, 1 to 1e9).
 
 int countSmallerThanMid(vector<int> &row, int mid)
 {

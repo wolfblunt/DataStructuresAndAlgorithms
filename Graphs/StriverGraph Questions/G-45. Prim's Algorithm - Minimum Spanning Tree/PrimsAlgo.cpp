@@ -33,7 +33,6 @@ class Solution
                 {
                     pq.push({adjWt, adjNode});
                 }
-                
             }
         }
         

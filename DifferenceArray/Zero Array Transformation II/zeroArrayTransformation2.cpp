@@ -45,6 +45,7 @@ public:
             if(a!=0)
             {
                 isAllZero = false;
+                break;
             }
         }
 

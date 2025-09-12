@@ -60,7 +60,7 @@ class Solution
        left = preSmall(arr,n);
        right = postSmall(arr,n);
        
-        long long area;
+       long long area;
        for(int i=0;i<n;i++){
             long long temp = (right[i]-left[i]-1)*arr[i];
             area = max(area, temp);

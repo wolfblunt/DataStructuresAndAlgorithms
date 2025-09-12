@@ -1,0 +1,61 @@
+// Merge K sorted linked lists : O(N * k)
+
+/*
+class Node {
+  public:
+    int data;
+    Node* next;
+
+    Node(int x){
+        data = x;
+        next = NULL;
+    }
+};
+*/
+
+class Solution {
+  public:
+    Node* mergeKLists(vector<Node*>& arr) {
+        Node* head = NULL;
+        int p = -1;
+        for(int i=0 ; i<arr.size() ; i++)
+        {
+            if(head == NULL || head->data > arr[i]->data)
+            {
+                head = arr[i];
+                p = i;
+            }
+        }
+        
+        int c = arr.size();
+        arr[p] = arr[p]->next;
+        if(arr[p] == NULL)
+        {
+            c--;
+        }
+        
+        Node* t = head;
+        while(c > 0)
+        {
+            int val = INT_MAX;
+            for(int i=0 ; i<arr.size() ; i++)
+            {
+                if(arr[i] != NULL && arr[i]->data < val)
+                {
+                    p = i ;
+                    val = arr[i]->data;
+                }
+            }
+            
+            t->next = arr[p];
+            t = t->next;
+            arr[p] = arr[p]->next;
+            if(arr[p] == NULL)
+            {
+                c--;
+            }
+        }
+        
+        return head;
+    }
+};

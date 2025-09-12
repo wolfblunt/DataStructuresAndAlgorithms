@@ -1,4 +1,4 @@
-// Word Search
+// Word Search : O(N∗M∗4^L)
 
 #include<bits/stdc++.h>
 using namespace std;

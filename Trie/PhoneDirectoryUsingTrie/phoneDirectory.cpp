@@ -68,8 +68,8 @@ class Trie
     {
         if(current->isEnd())
         {
-            result.push_back(addressPrefix);
-        }
+            result.push_back(addressPrefix)
+;        }
         
         for(char ch='a'; ch<='z';ch++)
         {

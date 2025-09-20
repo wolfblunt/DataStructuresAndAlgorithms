@@ -9,7 +9,7 @@ class Solution
     public:
     
     vector<long long> preSmall(long long int* arr,int n){
-       vector<long long> left;
+        vector<long long> left;
         stack< pair<long long,long long>> s;
         for(int i=0;i<n;i++)
         {
